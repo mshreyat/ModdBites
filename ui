@@ -1,1 +1,16 @@
+package com.moodapp.ui;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class UIHelper {
+    public static JLabel createLabel(String text) {
+        JLabel label = new JLabel(text);
+        label.setFont(new Font("Arial", Font.PLAIN, 16));
+        label.setForeground(Color.DARK_GRAY);
+        label.setAlignmentX(Component.CENTER_ALIGNMENT); // Center align the label
+
+        return label;
+    }
+}
 
